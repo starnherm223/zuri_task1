@@ -1,10 +1,6 @@
-import React, { useState } from 'react'
 import './Card.css'
 
-function Card() {
-    const [profile_name, setName] = useState('Jenifer Kessy');
-    const [job, setjob] = useState('Front-End Software Developer');
-    //const [slack_username, setSlack_username] = useState('starnherm223@gmail.com');
+function Card({name,job}) {
 
   return (
     <div className='Card'>
@@ -15,7 +11,7 @@ function Card() {
 
         </div>
         <div className='lower-container'>
-            <h3>{ profile_name }</h3>
+            <h3>{ name }</h3>
             <h4>{ job }</h4>
 
             
